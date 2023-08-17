@@ -9,7 +9,20 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "@mdi/font": "^7.1.96",
+    "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.1",
+    "firebase": "^10.1.0",
+    "popper.js": "^1.16.1",
+    "vue": "^3.3.4",
+    "vue-axios": "^3.5.2",
+    "vue-i18n": "9",
+    "vue-router": "^4.2.4",
+    "vuex": "^4.1.0",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
