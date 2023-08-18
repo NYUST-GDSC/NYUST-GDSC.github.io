@@ -1,7 +1,33 @@
-# Vue 3 + Vite
+# 國立雲林科技大學 Google 學生開發者社團-網頁前端
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+---
 
-## Recommended IDE Setup
+## 核心技術
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+> Vue 3 + Vite 4
+
+---
+
+## 開源貢獻方法
+
+### 修改專案
+
+#### 步驟 1 Fork 本專案 Clone 專案至本地端
+
+#### 步驟 2 開啟個人 Branch 進行程式修改
+
+#### 步驟 3 Push 至 GitHub 且開啟 Pull Request 至本專案
+
+### 提出修改建議或 Bug 回報
+
+#### 步驟 1 請在專案 Issue 開啟一個 Issue
+
+#### 步驟 2 請在 Issue 標題與內容詳細描述
+
+---
+
+## 系統架構
+
+![]()
+
+---
