@@ -32,6 +32,13 @@ export default {
     events:{
         title:"Future Events",
         subtitle:"Past Events",
+        calendarTitle:"Events Calendar",
+        future:{
+
+        },
+        past:{
+            checkInfo :"Check Info!"
+        },
     },
     annual:{
         title:"Annual Events"
