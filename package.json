@@ -10,11 +10,11 @@
     "deploy": "yarn build && node ./deploy/ghpages.js"
   },
   "dependencies": {
+    "@elfalem/leaflet-curve": "0.7.0",
     "@mdi/font": "^7.1.96",
     "@popperjs/core": "^2.11.8",
-    "@vue-leaflet/vue-leaflet": "^0.10.1",
-    "@elfalem/leaflet-curve": "0.7.0",
     "@tweenjs/tween.js": "17.2.0",
+    "@vue-leaflet/vue-leaflet": "^0.10.1",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
     "axios": "^1.4.0",
@@ -24,6 +24,7 @@
     "gh-pages": "^6.0.0",
     "leaflet": "^1.9.4",
     "popper.js": "^1.16.1",
+    "qalendar": "^3.5.0",
     "vue": "^3.3.4",
     "vue-axios": "^3.5.2",
     "vue-i18n": "9",

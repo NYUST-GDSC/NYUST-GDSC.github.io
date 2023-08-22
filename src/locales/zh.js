@@ -37,6 +37,13 @@ export default {
     events:{
         title:"未來活動",
         subtitle:"過往活動",
+        calendarTitle:"活動日期表",
+        future:{
+
+        },
+        past:{
+            checkInfo :"查看資訊"
+        },
     },
     annual:{
         title:"年度活動"
