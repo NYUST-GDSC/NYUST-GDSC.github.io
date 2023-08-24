@@ -4,25 +4,14 @@
       <h1>{{ $t("events.subtitle") }}</h1>
     </div>
   </div>
-  <div class="row event-item-container align-items-center justify-content-center" v-for="event in jsonProps" key="event">
-    <div class="col-md-3">
-      <img :src=event.picture.url class="img-thumbnail event-item-img" alt="" v-if="event.picture.url != undefined">
-      <img :src=defaultImage class="img-thumbnail event-item-img" alt="" v-else>
-    </div>
-    <div class="col-md-9">
-      <div class="badge bg-primary text-wrap" style="width: 6rem;">
-        {{ event.venue_name }}
+  <div class="row align-items-center justify-content-center" >
+      <div class="col-sm-3 flex-column align-items-center" v-for="event in jsonProps" key="event">
+        <div class="past-event-container">
+          <img :src=event.picture.url class="img-thumbnail event-item-img" alt="" v-if="event.picture.url != undefined">
+          <img :src=defaultImage class="img-thumbnail event-item-img" alt="" v-else>
+          <p class="mt-2 text-center">{{ event.title }}</p>
+        </div>
       </div>
-      <div class="badge bg-warning text-wrap" style="width: 6rem;">
-        {{ new Intl.DateTimeFormat('zh-TW').format(new Date(event.start_date)) }} ~ {{new Intl.DateTimeFormat('zh-TW').format(new Date(event.end_date))}}
-      </div>
-      <div class="fs-1">{{event.title}}</div>
-      <br>
-      <div class="fs-4"> {{event.description_short}}</div>
-      <button type="button" class="btn btn-danger" >
-        <a :href="event.url" target="_blank" style="text-decoration: none;color: white"> 馬上報名!</a>
-      </button>
-    </div>
   </div>
 </template>
 
@@ -47,9 +36,8 @@ export default {
 <style scoped>
 .event-item-container{
   border-radius: 25px;
+  border: black solid 1pt;
   background-color: #d7d7d7;
-  margin: 5%;
-  padding: 5%;
 }
 .event-item-img{
   border-radius: 100%;
@@ -57,5 +45,8 @@ export default {
   overflow: hidden;
   object-fit: cover;
   aspect-ratio: 1/1;
+}
+.past-event-container{
+  padding: 5%;
 }
 </style>

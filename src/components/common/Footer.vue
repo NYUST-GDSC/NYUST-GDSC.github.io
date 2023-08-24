@@ -6,7 +6,11 @@
           <h3 class="font-weight-light mb-2" style="color: #4285F4;"><br>{{ $t('footer.title') }}</h3>
           <p>{{ $t('footer.description') }}<a
               href="https://gdsc.community.dev/national-yunlin-university-of-science-and-technology/" target="_blank"
-              style="color: #4285F4;">{{ $t('footer.shortName') }}</a>。
+              style="color: #4285F4;">{{ $t('footer.shortName') }}</a>
+            {{$t("footer.and")}}
+            <a href="https://developers.google.com/community/gdsc?hl=zh-tw">
+              {{$t("footer.program")}}
+            </a>
           </p>
         </div>
         <div class="col-lg-6 text-lg-left btn-wrapper" id="social_media_list">

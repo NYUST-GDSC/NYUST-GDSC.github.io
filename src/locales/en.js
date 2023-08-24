@@ -46,7 +46,22 @@ export default {
     coc:{
         title:"National Yunlin University of Science and Technology Google Developer Student Clubs - Code of Conduct",
         subtitle:"Please follow community rules",
-        description:"",
+        description:"加入我們的計畫後，您將加入社群。如同任何日漸壯大的社群，我們必須訂定一些基本規範來約束所有人的行為。這些規範涵蓋線上 (例如郵寄清單和社交頻道) 和離線 (例如現場聚會) 行為。\n" +
+            "\n" +
+            "違反本守則的行為可能會導致計劃成員從計畫中移除。請盡可能判斷您的情況，如想進一步釐清或有任何疑問，歡迎隨時與我們聯絡。",
+        linkName:"GDSC Program-Code of Conduct Origin Link",
+        politeTitle:"Be nice.",
+        politeDescription:"We're all part of the same community, so be friendly, welcoming, and generally a nice person. Be someone that other people want to be around.",
+        joinTitle:"Participate.",
+        joinDescription:" Join in on discussions, show up for in-person meetings regularly, offer feedback, and help implement that feedback.",
+        respectTitle:"Be respectful and constructive.",
+        respectDescription:"Remember to be respectful and constructive with your communication to fellow members. Don't get into flame wars, make personal attacks, vent, or rant unconstructively. Everyone should take responsibility for the community and take the initiative to diffuse tension and stop a negative thread as early as possible.",
+        allowTitle:"Step down considerately.",
+        allowDescription:"If you have some form of responsibility in your community, be aware of your own constraints. If you know that a new job or personal situation will limit your time, find someone who can take over for you and transfer the relevant information (contacts, passwords, etc.) for a smooth transition.",
+        corporateTitle:"Be collaborative.",
+        corporateDescription:"Work together! We can learn a lot from each other. Share knowledge, and help each other out.",
+        graceTitle:"Use basic etiquette for online discussions.",
+        graceDescription:"Don’t send messages that only needs to go to one person. Keep off-topic conversations to a minimum. Don’t be spammy by advertising or promoting personal projects which are off topic.",
     },
     footer:{
         title:"Disclaimer",
@@ -54,6 +69,8 @@ export default {
         shortName:"GDSC NYUST",
         coc:"Code of  Conduct",
         contact:"Contact Us",
+        and:"and",
+        program:"GDSC Program",
     },
     notfound:{
         button:"Back To Home Page",

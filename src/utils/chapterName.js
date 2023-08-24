@@ -155,6 +155,9 @@ const chapterNameMap = {
   'Kao Yuan University of Science and Technology': '高雄市立空中大學',
   "National Dong Hwa University (Hualien University of Education)":"國立東華大學",
   "Taipei University of Technology":"國立臺北科技大學",
-  "Fu Jen Catholic University":"輔仁大學"
+  "Fu Jen Catholic University":"輔仁大學",
+  "National Sun Yat-Sen University":"國立中山大學",
+  "National Tsing Hua University_Nan-Da Campus":"國立清華大學-南大校區",
+  "National Chiao Tung University":"國立交通大學",
 }
 export default chapterNameMap;
