@@ -46,6 +46,7 @@ export default {
 #banner-container{
   padding-top: 8%;
   background: url("/index.png");
+  background-size: 100% 100%;
 }
 .banner-text-box{
   cursor: pointer;
