@@ -5,7 +5,7 @@
     </div>
     <div class="row justify-content-center">
       <div class="col-md-12 card-group">
-        <div class="card" v-for="event in events" data-aos="fade-down">
+        <div class="card" v-for="(event, index) in events" data-aos="fade-down" :key="index">
           <img :src="event.picture.url" class="card-img-top img-thumbnail img-fluid" alt="...">
           <div class="card-body">
             <h5 class="card-title">{{event.title}}</h5>
@@ -56,4 +56,32 @@ export default {
   object-fit: cover;
   aspect-ratio: 1/1;
 }
+.card .card-text{
+  height: 150px;
+  overflow-y: auto;
+}
+
+.card-text::-webkit-scrollbar {
+  width: 7px;
+}
+
+.card-text::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.card-text::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.card-text::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+@media (max-width: 576px) { 
+  .card .card-text{
+    height: auto;
+  }
+}
+
 </style>
