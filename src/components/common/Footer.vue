@@ -54,9 +54,19 @@ export default {
           "icon":"mdi-discord"
         },
         {
-          'name':"bevy",
+          'name':"Bevy",
           "link":"https://gdsc.community.dev/national-yunlin-university-of-science-and-technology/",
           "icon":"mdi-search-web"
+        },
+        {
+          'name':"GitHub",
+          "link":"https://github.com/NYUST-GDSC",
+          "icon":"mdi-github"
+        },
+        {
+          'name':"Email",
+          "link":"mailto://-gdsc_nyust@googlegroups.com",
+          "icon":"mdi-email"
         }
       ]
 

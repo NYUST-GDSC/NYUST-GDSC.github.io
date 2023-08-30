@@ -10,7 +10,7 @@
         </div>
       </div>
       <div class="col-md-6">
-        <div id="about-us-text-container" data-aos="fade-in" data-aos-duration="2s">
+        <div id="about-us-text-container" data-aos="fade-left" data-aos-duration="2s">
           {{ $t('index.about.text') }}
         </div>
       </div>

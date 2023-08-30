@@ -21,34 +21,21 @@
     </div>
       <div class="row align-items-center justify-content-center">
         <div class="col-sm-12 downicon" style="align-items: center; text-align: center; height: 30vh;">
-          <a href="#about-us-container"><img :src="'/downicon.ico'" style="height: 10vh" alt /></a>
+          <a id="button-to-about" v-on:click="scroll"><img :src="'/downicon.ico'" style="height: 10vh" alt /></a>
         </div>
       </div>
   </div>
-<!--  <div class="container" id="banner-container">-->
-<!--    <div class="row align-items-center justify-content-center main-banner">-->
-<!--      <div class="col-md-9" data-aos="flip-down">-->
-<!--        <h1 style="font-size: 2.5rem;">{{ $t('index.school') }}</h1>-->
-<!--        <h1 style="font-size: 2.5rem;">{{ $t('index.gdsc') }}</h1>-->
-<!--        <h1 style="font-size: 2.5rem;">{{ $t('index.slogan') }}</h1>-->
-<!--        <h1 style="font-size: 1.5rem;">Code for fun</h1>-->
-<!--      </div>-->
-<!--      <div class="col-md-3 text-center" style="align-items: center;"  data-aos="flip-left">-->
-<!--        <img class="card-img-top" src="/main_banner.gif"-->
-<!--             alt="Card image cap" style="max-width: 50vw;">-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="row align-items-center justify-content-center">-->
-<!--      <div class="col-sm-12 downicon" style="align-items: center; text-align: center; height: 30vh;">-->
-<!--        <a href="#intro-container"><img :src="'/downicon.ico'" style="height: 10vh" alt /></a>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
 </template>
 
 <script>
 export default {
   name: "MainBanner",
+  methods:{
+    scroll(){
+      const viewportHeight = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0);
+      window.scrollBy(0, viewportHeight);
+    },
+  }
 }
 </script>
 
