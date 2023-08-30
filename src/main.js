@@ -14,7 +14,6 @@ import AOS from 'aos';
 import store from './store';
 import i18n from "./plugins/i18n.js";
 
-
 const app = createApp(App);
 app.use(router);
 app.use(store);
