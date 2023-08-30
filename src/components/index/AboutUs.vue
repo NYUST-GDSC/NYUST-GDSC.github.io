@@ -31,7 +31,7 @@ export default {
   background-size: cover;
   padding-top: 5%;
   background-position: center;
-
+  overflow-y: hidden;
 }
 #about-us-img-container{
   padding: 5%;

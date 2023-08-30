@@ -6,7 +6,9 @@
     <router-link to="/annual" class="nav-link active btn navbarbtngreen" aria-current="page">{{$t("nav.annual")}}</router-link>
     <router-link to="/other-campus" class="nav-link active btn navbarbtnyellow" aria-current="page">{{$t("nav.other")}}</router-link>
     <select v-model="selected" @change="setLocale">
-      <option v-for="option in options" v-bind:value="option.value"> {{ option.text }}</option>
+      <option v-for="option in options" :value="option.value" :key="option.value"> 
+        {{ option.text }}
+      </option>
     </select>
   </div>
 <!--  <nav class="navbar bg-body-tertiary">-->
@@ -71,7 +73,6 @@ export default {
 /* navbar */
 .navbarsection {
   display: flex;
-  width: 100%;
   justify-content: center;
   align-items: center;
   z-index: 1;
