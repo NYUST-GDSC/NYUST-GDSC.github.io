@@ -1,7 +1,6 @@
 <template>
-  <div class="container" d="map-container">
-    <div id="map">
-    </div>
+  <div class="row" d="map-container">
+    <div id="map"></div>
   </div>
 </template>
 
@@ -87,10 +86,16 @@ export default {
           .catch((err)=>{console.log(err)})
 
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 20,
+            maxZoom: 30,
             attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
           }
       ).addTo(this.map);
+
+      const southWest = L.latLng(21.66321304091126, 118.09686630249207); // 左下角坐标
+      const northEast = L.latLng(25.433875776295135, 124.9); // 右上角坐标
+      const bounds = L.latLngBounds(southWest, northEast);
+
+      this.map.setMaxBounds(bounds);
     },
 
     refreshPolygon() {
@@ -120,16 +125,8 @@ export default {
 </script>
 
 <style scoped>
-div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #map {
   width: 100%;
-  height: 50vh;
-  /*aspect-ratio: 1 / 1;*/
-  border-radius: 12px;
+  min-height: 80vh;
 }
 </style>
