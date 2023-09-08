@@ -1,34 +1,32 @@
 <template>
   <div class="container-fluid" id="campus-container">
     <div class="row justify-content-center align-items-center" id="count-container">
-        <h1 class="count-text">全台共有 <span class="count-number-text"> {{campusCount}} </span> 所學校加入 GDSC 計畫!</h1>
+        <h1 class="count-text">{{$t("campus.prefixTitle")}} <span class="count-number-text"> {{campusCount}} </span> {{$t("campus.suffixTitle")}}</h1>
     </div>
 
     <MapLocate></MapLocate>
 
     <div class="row button-row">
       <div class="col-md-12" style="text-align: center">
-        <div class="btn-group">
-          <button type="button" class="btn btn-warning city-button" v-for="city in cityList" key="city">
-              <span v-on:click="getChapter(city)">
-                {{city}}
-              </span>
+          <button type="button" class="city-button" v-for="city in cityList" key="city" v-on:click="getChapter(city)">
+              {{city}}
           </button>
-        </div>
       </div>
     </div>
 
     <div class="row chapter-row">
-        <div class="card mb-3 d-inline-flex" style="width: 15rem;" v-for="chapter in selectedChapter" key="chapter" data-aos-easing="2s" data-aos="fade-in">
-          <img :src="chapter.logo" v-if='chapter.logo !== ""' class="img-thumbnail img-fluid chapter-img" alt="">
-          <img :src="nullPhoto" v-if='chapter.logo === ""' class="img-thumbnail img-fluid chapter-img" alt="">
-          <div class="card-body">
-            <p class="card-text">{{chapter.title}}</p>
-            <button type="button" class="btn btn-outline-success">
-              <a :href="chapter.url" target="_blank" >
-                找到我們~
-              </a>
-            </button>
+        <div class="col-6 col-xs-6 col-sm-3"  v-for="chapter in selectedChapter" key="chapter" data-aos-easing="2s" data-aos="fade-in">
+          <div class="card">
+            <img :src="chapter.logo" v-if='chapter.logo !== ""' class="img-thumbnail img-fluid chapter-img" alt="">
+            <img :src="nullPhoto" v-if='chapter.logo === ""' class="img-thumbnail img-fluid chapter-img" alt="">
+            <div class="card-body">
+              <p class="card-text">{{chapter.title}}</p>
+              <button type="button" class="btn btn-outline-success">
+                <a :href="chapter.url" target="_blank" >
+                  找到我們~
+                </a>
+              </button>
+            </div>
           </div>
       </div>
     </div>
@@ -100,7 +98,6 @@ export default {
   background-size: cover;
 }
 #count-container{
-
   padding: 10vh;
   animation: text-jump 5s;
   animation-iteration-count: infinite;;
@@ -118,6 +115,13 @@ span.count-number-text{
 }
 .button-row{
   margin: 5% 0%;
+}
+button.city-button{
+  border: 0px;
+  padding: 1%;
+  background-color: #baf1ba;
+  margin: 5px;
+  border-radius: 25%;
 }
 .chapter-row{
   padding: 0% 10%;
