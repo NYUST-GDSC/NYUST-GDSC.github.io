@@ -29,7 +29,7 @@
           <img src="/LOGO.png" class="img-thumbnail event-item-img" alt="">
         </div>
         <div class="col-md-9">
-          <div class="fs-1">國立雲林科技大學：近期沒有活動 !</div>
+          <div class="fs-1">{{($t("events.future.nonEvent"))}}</div>
         </div>
       </div>
 

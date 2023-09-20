@@ -13,7 +13,7 @@
         <div class="badge bg-primary text-wrap" style="width: 6rem;">
           {{ event.date}}
         </div>
-        <div class="fs-1">活動名稱: {{event.title}}</div>
+        <div class="fs-1">{{$t("annual.eventTitle")}} {{event.title}}</div>
         <br>
         <div class="fs-4"> {{event.description}}</div>
         <button type="button" class="btn btn-danger" >

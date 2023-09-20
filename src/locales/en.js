@@ -34,14 +34,15 @@ export default {
         subtitle:"Past Events",
         calendarTitle:"Events Calendar",
         future:{
-
+            nonEvent:"NYUST-GDSC: No event recently!"
         },
         past:{
             checkInfo :"Check Info!"
         },
     },
     annual:{
-        title:"Annual Events"
+        title:"Annual Events",
+        eventTitle:"Event:",
     },
     coc:{
         title:"National Yunlin University of Science and Technology Google Developer Student Clubs - Code of Conduct",
@@ -62,6 +63,10 @@ export default {
         corporateDescription:"Work together! We can learn a lot from each other. Share knowledge, and help each other out.",
         graceTitle:"Use basic etiquette for online discussions.",
         graceDescription:"Don’t send messages that only needs to go to one person. Keep off-topic conversations to a minimum. Don’t be spammy by advertising or promoting personal projects which are off topic.",
+    },
+    campus:{
+        prefixTitle:"There are ",
+        suffixTitle:" schools joined GDSC program in Taiwan",
     },
     footer:{
         title:"Disclaimer",

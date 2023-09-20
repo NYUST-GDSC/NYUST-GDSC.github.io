@@ -67,7 +67,17 @@ export default {
           'name':"Email",
           "link":"mailto://-gdsc_nyust@googlegroups.com",
           "icon":"mdi-email"
-        }
+        },
+        {
+          'name':"Flickr",
+          "link":"https://www.flickr.com/photos/199036014@N06/",
+          "icon":"mdi-flickr"
+        },
+        {
+          'name':"Linktree",
+          "link":"https://linktr.ee/gdsc_nyust",
+          "icon":"mdi-linktree"
+        },
       ]
 
     }

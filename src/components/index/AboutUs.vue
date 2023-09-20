@@ -37,6 +37,6 @@ export default {
   padding: 5%;
 }
 #about-us-text-container{
-  font-size: 2.0rem;
+  font-size: 1.6rem;
 }
 </style>

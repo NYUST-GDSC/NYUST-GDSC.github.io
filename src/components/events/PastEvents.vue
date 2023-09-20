@@ -5,7 +5,7 @@
     </div>
   </div>
   <div class="row align-items-center justify-content-center" >
-      <div class="col-sm-3 flex-column align-items-center" v-for="event in jsonProps" key="event">
+      <div class="col-6 col-sm-3 col-xs-3 align-items-center" v-for="event in jsonProps" key="event">
         <div class="past-event-container">
           <img :src=event.picture.url class="img-thumbnail event-item-img" alt="" v-if="event.picture.url != undefined">
           <img :src=defaultImage class="img-thumbnail event-item-img" alt="" v-else>
@@ -41,7 +41,8 @@ export default {
 }
 .event-item-img{
   border-radius: 100%;
-  border: #4285F4 solid 1rem;
+  box-sizing: border-box;
+  border: #4285F4 solid 10px;
   overflow: hidden;
   object-fit: cover;
   aspect-ratio: 1/1;

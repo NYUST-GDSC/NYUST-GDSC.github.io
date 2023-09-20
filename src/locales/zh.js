@@ -54,14 +54,19 @@ export default {
         subtitle:"過往活動",
         calendarTitle:"活動日期表",
         future:{
-
+            nonEvent:"國立雲林科技大學：近期沒有活動 !"
         },
         past:{
             checkInfo :"查看資訊"
         },
     },
     annual:{
-        title:"年度活動"
+        title:"年度活動",
+        eventTitle:"活動名稱:",
+    },
+    campus:{
+        prefixTitle:"全台共有 ",
+        suffixTitle:" 所學校加入 GDSC 計畫!",
     },
     footer:{
         title:"免責聲明",
