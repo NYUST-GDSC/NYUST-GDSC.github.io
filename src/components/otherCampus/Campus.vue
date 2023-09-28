@@ -43,7 +43,7 @@
                 target="_blank"
               >
                 找到我們~
-
+              </a>
             </div>
           </div>
         </transition-group>
@@ -137,8 +137,6 @@ h2 {
   background-color: #4285f4;
   padding: 0.6rem 0;
 }
-
-
 .city-select {
   max-width: 12rem;
   margin-left: auto;
@@ -172,7 +170,7 @@ h2 {
 .fade-enter-active,
 .fade-leave-active {
   transition: all 0.5s ease-in;
-]
+}
 button.city-button{
   border: 0px;
   padding: 1%;
@@ -213,18 +211,22 @@ button.city-button{
     font-size: 1.3rem;
     margin-bottom: 0.8rem;
   }
+
   .city-select {
     max-width: 390px;
   }
+
   .chapter-section {
     position: static;
     width: 100%;
     height: auto;
   }
+
   .chapter-section .card {
     width: 90%;
     margin: 10px auto 0;
   }
+
   .chapter-section .card img {
     margin: 0 16px;
   }
