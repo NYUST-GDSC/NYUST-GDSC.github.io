@@ -5,6 +5,10 @@ import 'bootstrap'
 import { loadFonts } from './plugins/webfontloader';
 import '@mdi/font/css/materialdesignicons.css';
 import 'aos/dist/aos.css';
+import './assets/scss/styles.scss'
+
+// Import all of Bootstrap's JS
+import * as bootstrap from 'bootstrap'
 
 import App from './App.vue'
 import router from "./router";
